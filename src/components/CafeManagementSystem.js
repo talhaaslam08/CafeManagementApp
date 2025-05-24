@@ -235,7 +235,7 @@ const CafeManagementSystem = () => {
 //   );
 
 
-const HomePage = ({ setCurrentPage }) => {
+const HomePage = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   // Sample images - in a real app, these would be actual cafe photos
@@ -402,7 +402,7 @@ const HomePage = ({ setCurrentPage }) => {
               View Our Menu
             </button>
             <button
-              onClick={() => setCurrentPage('reservations')}
+              onClick={() => setCurrentPage('reservation')}
               className="px-8 py-3 bg-white text-amber-600 text-lg font-semibold rounded-lg border-2 border-amber-600 hover:bg-amber-50 transform hover:scale-105 transition duration-300 shadow-lg"
             >
               Make a Reservation
